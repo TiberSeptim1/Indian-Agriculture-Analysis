@@ -7,7 +7,7 @@ pd.set_option('display.float_format', '{:,.2f}'.format)
 
 @st.cache_data
 def loaddata():
-    df = pd.read_csv(r"C:\Users\talos\Documents\PY\FP_PBL\apy.csv")
+    df = pd.read_csv("apy.csv")
     df.drop_duplicates(inplace=True)
     df.fillna(0, inplace=True)
     df["Crop_Year"] = df["Crop_Year"].astype(int)
