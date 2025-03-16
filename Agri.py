@@ -86,3 +86,5 @@ fig2 = px.line(Yearly_trend,
 
 
 st.plotly_chart(fig2)
+
+st.markdown("The data used is collected from _https://www.data.gov.in/catalog/district-wise-season-wise-crop-production-statistics-0_")
